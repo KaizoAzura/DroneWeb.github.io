@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drone.com</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- link icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- link animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- offcanvas -->
+
+    <!-- offcanvas navbar -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasMenuNavbar"
+      aria-labelledby="offcanvasMenuNavbar"
+    >
+      <div class="offcanvas-header d-flex justify-content-end">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas-search">
+          <form class="d-flex mx-2" role="search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
+        </div>
+        <div class="offcanvas-navbar">
+          <ul>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Features</a></li>
+            <li><a href="#" class="nav-link">Product</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas search -->
+
+    <div
+      class="offcanvas offcanvas-top"
+      tabindex="-1"
+      id="offcanvasSearchMenu"
+      aria-labelledby="offcanvasSearchMenu"
+    >
+      <div class="offcanvas-header d-flex justify-content-end">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas-search-form">
+          <form class="d-flex mb-3" role="search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <h5 class="fw-bold my-3">
+              <i class="ri-fire-fill"></i> Popular Product
+            </h5>
+          </div>
+          <div class="col-3">
+            <div class="card h-100">
+              <img
+                src="img/DJI mini 4 pro.png"
+                class="card-img-top mx-auto"
+                alt="DJI Mini 4 pro"
+              />
+              <div class="card-body pt-0">
+                <h5 class="card-title fs-3 fw-bold">DJI Mini 4 Pro</h5>
+                <p class="card-text fw-light">
+                  DJI Mini 4 Pro is most advanced mini camera drone to date.
+                </p>
+                <a href="#" class="btn">Purchase Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card h-100">
+              <img
+                src="img/DJI Mini 3.png"
+                class="card-img-top mx-auto"
+                alt="DJI Mini 4 pro"
+              />
+              <div class="card-body pt-0">
+                <h5 class="card-title fs-3 fw-bold">DJI Mini 3</h5>
+                <p class="card-text fw-light">
+                  DJI Mini 3 is a compact, ultra-lightweight camera drone built
+                  for adventure.
+                </p>
+                <a href="#" class="btn">Purchase Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card h-100">
+              <img
+                src="img/DJI Mavic 3 Pro.png"
+                class="card-img-top mx-auto"
+                alt="DJI Mini 4 pro"
+              />
+              <div class="card-body pt-0">
+                <h5 class="card-title fs-3 fw-bold">DJI Mavic 3 Pro</h5>
+                <p class="card-text fw-light">
+                  The DJI Mavic 3 Series features next-level imaging
+                  performance.
+                </p>
+                <a href="#" class="btn">Purchase Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card h-100">
+              <img
+                src="img/DJI Air 3.png"
+                class="card-img-top mx-auto"
+                alt="DJI Mini 4 pro"
+              />
+              <div class="card-body pt-0">
+                <h5 class="card-title fs-3 fw-bold">DJI Air 3</h5>
+                <p class="card-text fw-light">
+                  Air 3 boasts the first dual-primary camera system of the Air
+                  series.
+                </p>
+                <a href="#" class="btn">Purchase Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end offcanvas  -->
+
+    <!-- navbar -->
+
+    <div class="container-fluid column-1 p-0">
+      <nav class="navbar navbar-expand-lg bg-body-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Drone.com</a>
+          <div class="shop-toggle d-flex align-items-center">
+            <a href="#" class="shop">
+              <i class="ri-shopping-bag-3-line me-3"></i>
+            </a>
+            <a
+              class="menu-toggle"
+              href="#offcanvasMenuNavbar"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasMenuNavbar"
+              ><i class="ri-menu-3-fill"></i
+            ></a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <a
+                class="mx-3"
+                href="#offcanvasSearchMenu"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasSearchMenu"
+              >
+                <i class="ri-search-line"></i>
+              </a>
+              <a class="shop" href="#">
+                <i class="ri-shopping-bag-3-line"></i>
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- end navbar -->
+
+      <!-- jumbotron -->
+
+      <div class="row jumbotron mb-5 px-1">
+        <div class="col-12 text-center">
+          <img
+            src="img/background image.png"
+            alt="drone_image_bg"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          />
+        </div>
+        <div class="col-12 text-center">
+          <h2>Get Your Hands On the Most Advanced Drone</h2>
+          <p>
+            The fresh shades of autumn are here. Let's go fly a drone to get
+            some amazing footage of it.
+          </p>
+        </div>
+      </div>
+
+      <!-- features -->
+
+      <div class="container-fluid features-container">
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-4 features text-center"
+            data-aos="fade-right"
+            data-aos-duration="1400ms"
+            data-aos-delay="200"
+          >
+            <i class="ri-camera-3-fill mx-auto"></i>
+            <h5>Capture Every Moment</h5>
+            <p>
+              Elevate your photography and videography with high quality shots
+              and 4k camera.
+            </p>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 features text-center"
+            data-aos="fade-right"
+            data-aos-duration="1400ms"
+          >
+            <i class="ri-robot-2-fill mx-auto" style="color: blueviolet"></i>
+            <h5>Intelligent Flight</h5>
+            <p>
+              Experience features like obstacle avoidance, GPS tracking, and
+              more for a sale flight.
+            </p>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 features text-center"
+            data-aos="fade-right"
+            data-aos-duration="1400ms"
+            data-aos-delay="300"
+          >
+            <i class="ri-survey-fill mx-auto" style="color: orange"></i>
+            <h5>Versallity For All</h5>
+            <p>
+              Begginers to professional, we have the perfect drone for your
+              skill level and needs
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- quality -->
+      <div class="container-fluid mt-5 mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3 class="title" data-aos="fade-up" data-aos-duration="800">
+                Where Quality Soars Above All
+              </h3>
+              <p
+                class="text mb-0"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                Precision in Flight, Excellent in Capture
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12 text-center">
+              <img
+                src="img/DJI Air 3.png"
+                alt="Drone"
+                class="quality-image mx-auto"
+                data-aos="zoom-in"
+                data-aos-duration="3000ms"
+              />
+            </div>
+            <div
+              class="col-lg-5 col-md-12 col-12 quality-container ps-5 d-flex flex-md-row flex-lg-column flex-column mb-4"
+            >
+              <div
+                class="quality"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
+                <h3 class="title">Durrability Assurance</h3>
+                <p class="text">
+                  Our drones are more than just technology, they are statement
+                  to Durrability.
+                </p>
+              </div>
+              <div
+                class="quality"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
+                <h3 class="title">Hi Tech Sensor</h3>
+                <p class="text">
+                  4K resolution to advance stabilization witness unparalleled
+                  clarity every shot
+                </p>
+              </div>
+              <div
+                class="quality"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+              >
+                <h3 class="title">Easy to Fly</h3>
+                <p class="text">
+                  Our drones embody the epitome of quality, ensuring every
+                  flight is a seamless, superior Experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- view -->
+      <div class="container-fluid">
+        <div class="container view">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3 class="title" data-aos="fade-up" data-aos-duration="800">
+                Elevate Your View, Relive the Skies
+              </h3>
+              <p
+                class="text mb-0"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                Unleash Breathtaking Moments in Our Aerial Gallery
+              </p>
+            </div>
+          </div>
+
+          <div class="row pb-5 mt-5">
+            <div class="col-md-8 text-center">
+              <img
+                src="img/person-drone-remote-control-sunglasses.jpg"
+                alt="People control drone"
+                class="img-fluid"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+              />
+            </div>
+            <div
+              class="col-md-4 text-center flex-column justify-content-between d-flex"
+            >
+              <div class="col-12 mt-md-auto mt-3">
+                <img
+                  src="img/drone_opener.jpg"
+                  alt="Drone-opener"
+                  class="img-fluid"
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  data-aos-delay="100"
+                />
+              </div>
+              <div class="col-12 mt-md-auto mt-3">
+                <img
+                  src="img/eye-in-the-sky-drone-surveillance-and-privacy_1500.jpg"
+                  alt="Drone-opener"
+                  class="img-fluid"
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  data-aos-delay="200"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- store price -->
+
+      <div class="container-fluid">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3 class="title" data-aos="fade-up" data-aos-duration="800">
+                Explore Limitless Horizons, Capture Every Moment
+              </h3>
+              <p
+                class="text mb-0"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                Discover Your Aerial Companion Today
+              </p>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-12 price">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-lg-4 col-md-8 mx-md-auto">
+                  <div
+                    class="card h-100 card-first"
+                    data-aos="zoom-in"
+                    data-aos-duration="800"
+                  >
+                    <div class="product-image text-center">
+                      <img
+                        src="img/DJI mini 4 pro.png"
+                        class="card-img-top w-75"
+                        alt="DJI Mini 4 Pro"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">DJI Mini 4 Pro</h5>
+                      <div
+                        class="product-price d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-text">$707 <span>$899</span></p>
+                        <div class="product-rating d-flex">
+                          <i class="ri-star-s-fill"></i>
+                          <i class="ri-star-s-fill"></i>
+                          <i class="ri-star-s-fill"></i>
+                          <i class="ri-star-s-fill"></i>
+                          <i class="ri-star-s-fill"></i>
+                        </div>
+                      </div>
+                      <div
+                        class="product-btn d-flex align-items-center justify-content-between mt-4"
+                      >
+                        <a href="#" class="button-primary">Add to Card</a>
+                        <a href="#" class="button-second">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div
+                    class="card h-100 card-mid"
+                    data-aos="zoom-in"
+                    data-aos-duration="800"
+                    data-aos-delay="100"
+                  >
+                    <div class="product-image text-center">
+                      <img
+                        src="img/DJI Air 3.png"
+                        class="card-img-top w-75"
+                        alt="DJI Mini 4 Pro"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">DJI Air 3</h5>
+                      <div
+                        class="product-price d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-text">$899 <span>$1.099</span></p>
+                        <div class="product-rating d-flex">
+                          <i class="ri-star-s-fill"></i>
+                          <i class="ri-star-s-fill"></i>
+                          <i class="ri-star-s-fill"></i>
+                          <i class="ri-star-s-fill"></i>
+                          <i class="ri-star-s-fill"></i>
+                        </div>
+                      </div>
+                      <div
+                        class="product-btn d-flex align-items-center justify-content-between mt-4"
+                      >
+                        <a href="#" class="button-primary">Add to Card</a>
+                        <a href="#" class="button-second">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div
+                    class="card h-100"
+                    data-aos="zoom-in"
+                    data-aos-duration="800"
+                    data-aos-delay="200"
+                  >
+                    <div class="product-image text-center">
+                      <img
+                        src="img/DJI Inspire 3.png"
+                        class="card-img-top w-75"
+                        alt="DJI Mini 4 Pro"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">DJI Inspire 3</h5>
+                      <div
+                        class="product-price d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-text">$1299 <span>$1.499</span></p>
+                        <div class="product-rating d-flex">
+                          <i class="ri-star-s-fill"></i>
+                          <i class="ri-star-s-fill"></i>
+                          <i class="ri-star-s-fill"></i>
+                          <i class="ri-star-s-fill"></i>
+                          <i class="ri-star-s-fill"></i>
+                        </div>
+                      </div>
+                      <div
+                        class="product-btn d-flex align-items-center justify-content-between mt-4"
+                      >
+                        <a href="#" class="button-primary">Add to Card</a>
+                        <a href="#" class="button-second">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- review -->
+      <div class="container-fluid">
+        <div class="container pb-5">
+          <div class="row mt-5 mb-5">
+            <div class="col-12 text-center">
+              <h3 class="title" data-aos="fade-up" data-aos-duration="800">
+                Soaring Reviews, Happy Heights
+              </h3>
+              <p
+                class="text mb-0"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                Hear What Our Customers have to Say About Their Drone Adventures
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div
+                id="carouselExampleSlidesOnly"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div
+                  class="carousel-inner"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                >
+                  <div class="carousel-item h-100 active text-center">
+                    <img
+                      src="img/istockphoto-1300845620-612x612.jpg"
+                      class="d-block mx-auto"
+                      alt="Customer Review"
+                    />
+                    <h3>John Doe</h3>
+                    <h5 class="sub-heading">Photographer</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nam officiis recusandae aut suscipit, fugit asperiores.
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Nobis, fugiat?
+                    </p>
+                    <div
+                      class="product-rating d-flex text-center justify-content-center"
+                    >
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100 text-center">
+                    <img
+                      src="img/istockphoto-1300845620-612x612.jpg"
+                      class="d-block mx-auto"
+                      alt="Customer Review"
+                    />
+                    <h3>Jane Doe</h3>
+                    <h5 class="sub-heading">Videographer</h5>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Veritatis sint laborum qui nam, labore magnam maiores,
+                      praesentium accusantium sapiente quas voluptate nemo iste
+                      officiis debitis laudantium omnis quos sed dolorem.
+                    </p>
+                    <div
+                      class="product-rating d-flex text-center justify-content-center"
+                    >
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100 text-center">
+                    <img
+                      src="img/istockphoto-1300845620-612x612.jpg"
+                      class="d-block mx-auto"
+                      alt="Customer Review"
+                    />
+                    <h3>Samuel Christ</h3>
+                    <h5 class="sub-heading">Wedding Organizer</h5>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Assumenda explicabo eligendi sed est possimus maxime eum
+                      ipsam commodi suscipit nihil qui quas nostrum, provident
+                      soluta dolor iste harum cupiditate iure similique magnam
+                      saepe! Magni ipsa quidem ratione incidunt ducimus
+                      reiciendis.
+                    </p>
+                    <div
+                      class="product-rating d-flex text-center justify-content-center"
+                    >
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                      <i class="ri-star-s-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- subscription -->
+      <div class="container-fluid subscription mt-5">
+        <div class="container">
+          <div class="row mt-5 mb-5">
+            <div class="col-12 text-center">
+              <h1 data-aos="zoom-in" data-aos-duration="800">
+                Ready to elevate your perspective?
+              </h1>
+              <form class="d-flex subscription-input">
+                <input
+                  class="form-control me-2"
+                  type="email"
+                  placeholder="Enter your email address"
+                  aria-label="subscription"
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                />
+                <button
+                  class="btn"
+                  type="submit"
+                  data-aos="fade-left"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="container-fluid footer mt-5 mb-2">
+        <div class="container">
+          <div
+            class="align-items-lg-stretch justify-content-lg-center d-flex flex-wrap"
+          >
+            <div class="col-lg-6 col-12 text-center text-lg-start">
+              <a href="#"><h1 class="mb-5">Drone.com</h1></a>
+              <div class="social-media d-lg-flex text-center mx-auto">
+                <a href="#" class="me-3">
+                  <i class="ri-twitter-x-fill"></i>
+                </a>
+                <a href="#" class="me-3">
+                  <i class="ri-instagram-line"></i>
+                </a>
+                <a href="#" class="me-3">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+              </div>
+              <p class="mt-2">Follow our social media</p>
+            </div>
+            <div
+              class="col-lg-2 col-md-4 text-lg-start text-center mt-3 col-12"
+            >
+              <h3 class="mb-3">Support</h3>
+              <ul>
+                <li><a href="#" class="footer-link">FAQ</a></li>
+                <li><a href="#" class="footer-link">How it Works</a></li>
+                <li><a href="#" class="footer-link">Terms of Use</a></li>
+              </ul>
+            </div>
+            <div
+              class="col-lg-2 col-md-4 text-lg-start text-center mt-3 col-12"
+            >
+              <h3 class="mb-3">Links</h3>
+              <ul>
+                <li><a href="#" class="footer-link">Home</a></li>
+                <li><a href="#" class="footer-link">About</a></li>
+                <li><a href="#" class="footer-link">Features</a></li>
+                <li><a href="#" class="footer-link">Product</a></li>
+                <li><a href="#" class="footer-link">Contact</a></li>
+              </ul>
+            </div>
+            <div
+              class="col-lg-2 col-md-4 text-lg-start text-center mt-3 col-12"
+            >
+              <h3 class="mb-3">Get in Touch</h3>
+              <ul>
+                <li><a href="#" class="footer-link">+ 123 456 789 0</a></li>
+                <li>
+                  <a href="#" class="footer-link"
+                    >123 Street, Malang, Indonesia</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-more container mt-0 d-flex justify-content-between">
+        <p class="m-0">&copy; Web Develope by Kaizo Azura</p>
+        <p>KaizoAzura 2024</p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
