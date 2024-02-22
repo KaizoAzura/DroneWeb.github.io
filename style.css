@@ -2,6 +2,7 @@
   font-family: "Mabry Pro", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -549,9 +550,6 @@ img.quality-image {
 }
 
 @media screen and (max-width: 575px) {
-  body {
-    overflow-x: hidden;
-  }
 
   a.menu-toggle {
     display: flex;
