@@ -469,7 +469,7 @@ img.quality-image {
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 576px) {
+@media screen and (max-width: 1023px) and (min-width: 576px) {
   .column-1 {
     height: 100vh;
   }
