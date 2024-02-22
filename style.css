@@ -568,6 +568,11 @@ img.quality-image {
   .navbar {
     border-bottom: 1px solid black;
   }
+
+  #offcanvasMenuNavbar {
+    display: flex;
+  }
+
   .column-1 {
     height: 100vh;
   }
