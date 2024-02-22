@@ -199,7 +199,6 @@ a.popular-product:hover {
   box-shadow: 5px 5px 10px 0px #e1e1e1;
   padding: 35px;
   margin: 10px 10px 20px 10px;
-  overflow-x: hidden;
 }
 
 .features i {
@@ -251,7 +250,6 @@ p.text {
 .quality h3 {
   font-size: 25px;
   font-weight: bold;
-  overflow-x: hidden;
 }
 
 .quality p {
@@ -259,7 +257,6 @@ p.text {
   font-weight: 300;
   color: gray;
   width: 80%;
-  overflow-x: hidden;
 }
 
 img.quality-image {
@@ -272,7 +269,7 @@ img.quality-image {
 
 .view img {
   border-radius: 6px;
-  overflow-x: hidden;
+
 }
 
 /* price */
@@ -283,7 +280,7 @@ img.quality-image {
 
 .price .card {
   border-radius: none;
-  overflow-x: hidden;
+
 }
 
 .price .card img {
@@ -406,7 +403,7 @@ img.quality-image {
 .subscription .subscription-input input {
   font-size: 17px;
   padding: 15px 20px;
-  overflow-x: hidden;
+
 }
 
 .subscription .subscription-input button {
@@ -414,7 +411,7 @@ img.quality-image {
   color: white;
   font-size: 16px;
   font-weight: bold;
-  overflow-x: hidden;
+
 }
 
 /* footer */
